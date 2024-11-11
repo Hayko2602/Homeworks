@@ -1,9 +1,10 @@
 // Arrays Home work
 
-//<<<<<<<<<<<<<<<<___________1
-//Given an array of strings and numbers. Print the number of integers and the number of
-//strings in the array.
-// [1, ‘10’, ‘hi’, 2, 3]
+//<<<<<<<<<<<<<<<<___________1 >>>>>>>>>>>>>>>
+/*Given an array of strings and numbers. Print the number of integers and the number of
+strings in the array.
+ [1, ‘10’, ‘hi’, 2, 3] -> “Numbers: 3, Strings: 2”
+ */
 
 arr = [1, '10', 'hi', 2, 3, 4, 'ok'];
 
@@ -17,14 +18,15 @@ arr = [1, '10', 'hi', 2, 3, 4, 'ok'];
             num += 1;
         }
     }
-    console.log("typr of strings is -" + str);
-    console.log("typr of Integer is -" + num);
+    console.log("strings: - " + str);
+    console.log("Numbers: - " + num);
 
 
-//<<<<<<<<<<<<<<<<<< ______________2
-//Write a function which receives an array and a number as arguments and returns a new
-//array from the elements of the given array which are larger than the given number.
-//[10, 25, 16, -5, 30, 15, 24] , 16 -> [25, 30, 24]
+//<<<<<<<<<<<<<<<<<< ______________2 >>>>>>>>>>>>>>>>>>>>>>>>
+
+/*Write a function which receives an array and a number as arguments and returns a new
+array from the elements of the given array which are larger than the given number.
+[10, 25, 16, -5, 30, 15, 24] , 16 -> [25, 30, 24]*/
 
 let arr = [10, 25, 16, -5, 30, 15, 24];
 let arr2 = [];
@@ -41,9 +43,13 @@ function arrMaxNums(arr,num) {
     }
 }
 
-//<<<<<<<<<<<<<<<<<< ______________3
-//Given an array of numbers which is almost sorted in ascending order.
-//Find the index where sorting, order is violated.
+//<<<<<<<<<<<<<<<<<< ______________3 >>>>>>>>>>>>>>>>>
+/*Given an array of numbers which is almost sorted in ascending order.
+Find the index where sorting, order is violated.
+[2, 12, 15, 48, 64] -> -1
+[-9, -4, -4, 3, 12, 4, 5] -> 5
+*/
+
 let arr = [-8,-3,15,7,18,20,24]
 function fnMissIndex(arr) {
     //debugger
@@ -61,7 +67,11 @@ function fnMissIndex(arr) {
 //<<<<<<<<<<<<<<<<<< ______________4
 /*Given an object. Invert it (keys become values and values become keys). If there
 is more than key for that given value create an array.
+{ a: ‘1’, b: ‘2’ } -> { 1: ‘a’, 2: ‘b’ } 
+{ a: ‘1’, b: ‘2’, c: ‘2’ } -> { 1: ‘a’, 2: [‘b’, ‘c’] }
+ { a: ‘1’, b: ‘2’, c: ‘2’, d: ‘2’} -> { 1: ‘a’, 2: [‘b’, ‘c’, ‘d’] }
 */
+
 function chek(obj,val) {
     return obj.hasOwnProperty(val)
 }
