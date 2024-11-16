@@ -63,41 +63,24 @@ function individual(a,b) {
     //debugger
     if (a<b) {
         for (let i = a; i <= b; i++) {
-            if (b < 100) {
-                if ((Math.floor(i/10))%2 == 0) {
-                    if ((i - (Math.floor(i/10) * 10)) % 2 == 0) {
+            if (i < 100) {
+                if (Math.floor(i / 10) % 2 == 0) {
+                    if ((i - (Math.floor(i / 10) * 10)) % 2 == 0) {
                         console.log(i)
                     }
                 }
-            }else if (a > 100) {
-                if (Math.floor(i / 100) % 2 == 0) {
-                     if (Math.floor(i / 10) % 2 == 0) {
-                        if ((i - (Math.floor(i/10)*10)) % 2 == 0) {
-                            console.log(i)
-                        }
-                    }   
-                }
             }else{
-                if (i < 100) {
-                    if ((Math.floor(i/10))%2 == 0) {
-                        if ((i - (Math.floor(i/10) * 10)) % 2 == 0) {
+                if (Math.floor(i / 100) % 2 == 0) {
+                    if (Math.floor(i / 10) % 2 == 0) {
+                        if ((i - (Math.floor(i / 10) * 10)) % 2 == 0) {
                             console.log(i)
                         }
-                    }
-                }else{
-                    if (Math.floor(i / 100) % 2 == 0) {
-                        if (Math.floor(i / 10) % 2 == 0) {
-                            if ((i - (Math.floor(i/10)*10)) % 2 == 0) {
-                                console.log(i)
-                            }
-                        }   
                     }
                 }
             }
         }
         //return "Such numbers does not exist.";
-    }
-    else {
+    }else {
         return "Incorect imput";
     }
 }
