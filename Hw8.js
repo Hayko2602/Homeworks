@@ -61,12 +61,14 @@ comma-separated sequence on a single line.*/
 
 function individual(a,b) {
     //debugger
+    let alarm = 0;
     if (a<b) {
         for (let i = a; i <= b; i++) {
             if (i < 100) {
                 if (Math.floor(i / 10) % 2 == 0) {
                     if ((i - (Math.floor(i / 10) * 10)) % 2 == 0) {
                         console.log(i)
+                        alarm = 1;
                     }
                 }
             }else{
@@ -74,12 +76,15 @@ function individual(a,b) {
                     if (Math.floor(i / 10) % 2 == 0) {
                         if ((i - (Math.floor(i / 10) * 10)) % 2 == 0) {
                             console.log(i)
+                            alarm = 1;
                         }
                     }
                 }
             }
         }
-        //return "Such numbers does not exist.";
+        if (alarm !== 1) {
+            return "Such numbers does not exist.";
+        }
     }else {
         return "Incorect imput";
     }
