@@ -54,35 +54,20 @@ function negativMult(arr) {
 }
 
 
-
+//            >>>>>>>>>>>>>>>>>>___________ 3 _____________<<<<<<<<<<<<<<<<<<<<
 /*Write a function, which receives two numbers as arguments and finds all numbers between
 them such that each digit of the number is even. The numbers obtained should be printed in a
 comma-separated sequence on a single line.*/
 
-
 function individual(a,b) {
-    for (let i = a; i <= b; i++) {
-        if (b < 100) {
-            if (Math.floor((i/10) * 10)%2 == 0) {
-                console.log(i)
-            }
-        }else {
-            if (Math.floor((i/100) * 100)%2 == 0) {
-                console.log(i)
-            }
-        }
-        
-    }
-}
-
-
-
-function individual(a,b) {
+    //debugger
     if (a<b) {
         for (let i = a; i <= b; i++) {
             if (b < 100) {
-                if (Math.floor((i/10) * 10)%2 == 0) {
-                    console.log(i)
+                if ((Math.floor(i/10))%2 == 0) {
+                    if ((i - (Math.floor(i/10) * 10)) % 2 == 0) {
+                        console.log(i)
+                    }
                 }
             }else if (a > 100) {
                 if (Math.floor(i / 100) % 2 == 0) {
@@ -94,8 +79,10 @@ function individual(a,b) {
                 }
             }else{
                 if (i < 100) {
-                    if (Math.floor((i/10) * 10)%2 == 0) {
-                        console.log(i)
+                    if ((Math.floor(i/10))%2 == 0) {
+                        if ((i - (Math.floor(i/10) * 10)) % 2 == 0) {
+                            console.log(i)
+                        }
                     }
                 }else{
                     if (Math.floor(i / 100) % 2 == 0) {
@@ -110,7 +97,7 @@ function individual(a,b) {
         }
         //return "Such numbers does not exist.";
     }
-    else if{
+    else {
         return "Incorect imput";
     }
 }
