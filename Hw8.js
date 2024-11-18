@@ -61,7 +61,7 @@ function negativMult(arr) {
 /*Write a function, which receives two numbers as arguments and finds all numbers between
 them such that each digit of the number is even. The numbers obtained should be printed in a
 comma-separated sequence on a single line.*/
-
+// es verjiny minchev grelem es versiayi- "Such numbers does not exist."; hamar 2 jam tevela vor chisht cuyc ta
 function individual(a,b) {
     //debugger
     let alarm = 0;
