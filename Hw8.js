@@ -21,7 +21,7 @@ function partOfArr(arr) {
 }
 
 
-//                                              >>>>>>>>>>>>>_____1___________<<<<<<<<<<<<<<<<
+//                                              >>>>>>>>>>>>>_____2___________<<<<<<<<<<<<<<<<
 /*Write a function, which receives an array as an argument which elements arrays of
 numbers. Find biggest negative number of each array. Return product of that numbers.If
 there is not any negative number in an array, ignore that one. Check that items of the
@@ -49,6 +49,9 @@ function negativMult(arr) {
             res *= tmp;    
         }
         
+    }
+    if (res == 1) {
+        return "No negatives";
     }
     return res;
 }
